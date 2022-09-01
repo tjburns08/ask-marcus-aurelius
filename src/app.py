@@ -11,6 +11,8 @@ app = Dash(__name__)
 server = app.server
 
 dat = pd.read_csv('data/meditations_processed.csv')
+dat['cosine_dist'] = 0
+
 space = pd.read_csv('data/sentence_embeddings.csv')
 
 # For update function
@@ -23,7 +25,7 @@ image_path = 'assets/DALL·E 2022-08-31 21.03.55 - A painting of Marcus Aurelius
 fig = px.scatter()
 app.layout = html.Div([
     # TODO make the instructions
-    html.A(html.P('Click here for instructions'), href="https://tjburns08.github.io/gwas_app_instructions.html"),
+    html.A(html.P('Click here for my relevant article'), href="https://tjburns08.github.io/ask_marcus_writeup.html"),
     html.Img(src=image_path, 
         style={'height':'30%', 'width':'30%'}),
     dcc.Textarea(
@@ -64,11 +66,10 @@ def update_table(n_clicks, value):
         curr_dist = distance.cosine(u = text_coord, v = curr)
         cos_dist.append(curr_dist)
 
-    out['cos_dist'] = cos_dist
-    out = out.sort_values('cos_dist')
+    out['cosine_dist'] = cos_dist
+    out = out.sort_values('cosine_dist')
     out = out.head(10)
-    out = out[['book', 'verse', 'text']]
-
+    out['cosine_dist'] = round(out['cosine_dist'], 3)
     return out.to_dict('records')
 
 
