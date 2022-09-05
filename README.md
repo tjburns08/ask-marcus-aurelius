@@ -25,7 +25,7 @@ This creates a virtual environment and installs the necessary python packages. N
 ### Run the run shell script: 
 In the command line: `./run.sh`
 ### Open your browser and go to the link Dash gives you:
-In the command line after you do the above step, you'll get a message that gives you a link. Open up your browser and go there. Example on my computer: `Dash is running on http://127.0.0.1:8050/`
+In the command line after you do the above step, you'll get a message that gives you a link. Open up your browser and go there. Example on my computer: `Dash is running on http://XXX.X.X.X:XXXX/`
 
 # Usage
 ### Type a question into the search bar and press submit
