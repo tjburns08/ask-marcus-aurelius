@@ -8,7 +8,7 @@ Each passage (book and verse) in the Meditations has been mapped by the all-mpne
 I tried to deploy it to Heroku, the best practices for Dash apps, but it was too big. This is a common problem when you want to deploy large AI/ML models. If there is enough popular demand, I might try to put it on AWS or something similar down the line. Until then, I have it here as a repo you can clone. For those who don't know how to code, I've made the setup and running of the program as simple as running a shell script (in the command line: ./some-text). 
 
 # Setup 
-### Clone this repo: 
+### Clone this repo (copy this into the command line): 
 `git clone https://github.com/tjburns08/ask-marcus-aurelius`
 
 ### Go to the repo's root directory
