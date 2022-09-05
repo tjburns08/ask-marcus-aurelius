@@ -7,22 +7,23 @@ Each passage (book and verse) in the Meditations has been mapped by the all-mpne
 # Why is this not a web app? 
 I tried to deploy it to Heroku, the best practices for Dash apps, but it was too big. This is a common problem when you want to deploy large AI/ML models. If there is enough popular demand, I might try to put it on AWS or something similar down the line. Until then, I have it here as a repo you can clone. For those who don't know how to code, I've made the setup and running of the program as simple as running a shell script (in the command line: ./some-text). 
 
+# Before you install.
+Please note that this will take up around 1 Gb of space on your computer. Again, it was too bulky for my usual deployment on Heroku. The instructions below are tailored toward Mac and Linux users. Instructions for Windows will follow. 
+
 # Setup 
-### Clone this repo (copy this into the command line): 
-`git clone https://github.com/tjburns08/ask-marcus-aurelius`
+### Clone this repo: 
+In the command line, type `git clone https://github.com/tjburns08/ask-marcus-aurelius`
 
 ### Go to the repo's root directory
-In the command line, type "cd" followed by SPACE, and then drag and drop the repo's folder into the command line. Then press enter. 
+In the command line, type `cd ask-marcus-aurelius`
 
 ### Run the setup shell script: 
-This creates a virtual environment and installs the necessary python packages. Note that you only have to do this once. 
-
-`./setup.sh`
+This creates a virtual environment and installs the necessary python packages. Note that you only have to do this once. In the command line: `./setup.sh`
 
 
 # Run
 ### Run the run shell script: 
-`./run.sh`
+In the command line: `./run.sh`
 ### Open your browser and go to the link Dash gives you:
 In the command line after you do the above step, you'll get a message that gives you a link. Open up your browser and go there. Example on my computer: `Dash is running on http://127.0.0.1:8050/`
 
