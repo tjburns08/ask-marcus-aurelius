@@ -32,5 +32,5 @@ In the command line after you do the above step, you'll get a message that gives
 Note: output is organized by book and verse. Each row in descending order of relevance.
 
 # Misc
-The image was created by DALL-E2. The prompt was "A painting of Marcus Aurelius thinking deeply as a stoic philosopher in ancient Rome"
+The image was created by DALL-E 2. The prompt was "A painting of Marcus Aurelius thinking deeply as a stoic philosopher in ancient Rome"
 
